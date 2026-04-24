@@ -4,7 +4,7 @@ set -o xtrace -o nounset -o pipefail -o errexit
 
 export CARGO_PROFILE_RELEASE_STRIP=symbols
 export CARGO_PROFILE_RELEASE_LTO=fat
-export RUSTFLAGS="${RUSTFLAGS} --cfg auditable"
+export RUSTFLAGS="${RUSTFLAGS:-} --cfg auditable"
 
 # Bundle licenses
 cargo-bundle-licenses --format yaml --output ${SRC_DIR}/THIRDPARTY.yml
