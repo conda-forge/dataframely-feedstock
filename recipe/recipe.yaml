@@ -1,6 +1,6 @@
 context:
   name: dataframely
-  version: "2.13.0"
+  version: "2.13.1"
   python_min: 3.10.*
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 481bfb699e9e398dd271c51ff1a96c294fbdd01bdacdbe37de0dfbf9b7b47c62
+  sha256: 2ed77e2789b9049ac94b531432691d5f1a2726cee76332b1a5ba61d73916d430
 
 build:
   number: 0
