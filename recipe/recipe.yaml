@@ -26,6 +26,9 @@ requirements:
         - maturin >=1.7,<2
     - ${{ compiler('rust') }}
     - ${{ stdlib('c') }}
+    # aws-lc-sys requires NASM on win-64
+    - if: win
+      then: nasm
     - cargo-bundle-licenses
     - cargo-auditable
   host:
